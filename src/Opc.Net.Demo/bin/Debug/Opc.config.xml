@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <!--<OpcServer ServerName="OPC.SimaticNET" IPAddress="10.102.102.118">-->
+
+    <OpcServer ServerName="Kepware.KEPServerEX.V6" IPAddress="192.168.27.220">
+    
+    <!--采煤机参数-->
+    <ShearerInfo GroupName="ShearerInfoGroup" ClientHandle="1" UpdateRate="100">
+
+
+  
+
+      <Item ItemID="Siemens.300_E1.TK101.P_Unit_TK101_DB_Water_Phase_Fill_SP" ClientHandle="1" RequestedDataType="8210"></Item>
+
+      <!--<Item ItemID="Siemens.300_E1.Report_TK001.AI_MANAGE_DB_TE01_ENG_OUT_REAL" ClientHandle="1" RequestedDataType="8210"></Item>-->
+
+      
+
+
+      <!--左牵，1表示左牵，0表示未运动--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,X20.2" ClientHandle="1" RequestedDataType="11"></Item>
+      --><!--右牵，1表示右牵，0表示未运动--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,X20.1" ClientHandle="2" RequestedDataType="11"></Item>
+      --><!--牵引速度--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,REAL40" ClientHandle="3" RequestedDataType="5"></Item>
+      --><!--采煤机位置--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,REAL44" ClientHandle="4" RequestedDataType="5"></Item>
+      --><!--左滚筒高度--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,REAL48" ClientHandle="5" RequestedDataType="5"></Item>
+      --><!--右滚筒高度--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,REAL52" ClientHandle="6" RequestedDataType="5"></Item>
+      --><!--左截电流--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT6" ClientHandle="7" RequestedDataType="2"></Item>
+      --><!--右截电流--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT8" ClientHandle="8" RequestedDataType="2"></Item>
+      --><!--左牵电流--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT2" ClientHandle="9" RequestedDataType="2"></Item>
+      --><!--右牵电流--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT4" ClientHandle="10" RequestedDataType="2"></Item>
+      --><!--左截启--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,X20.6" ClientHandle="11" RequestedDataType="11"></Item>
+      --><!--右截启--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,X20.5" ClientHandle="12" RequestedDataType="11"></Item>
+      --><!--左截温度--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT10" ClientHandle="13" RequestedDataType="2"></Item>
+      --><!--右截温度--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT12" ClientHandle="14" RequestedDataType="2"></Item>
+      --><!--油泵电机电流--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT14" ClientHandle="15" RequestedDataType="2"></Item>
+      --><!--工作模式 2人工 4学习 8自动割煤 16 传感器配置--><!--
+      <Item ItemID="S7:[S7 connection_2]DB201,INT34" ClientHandle="16" RequestedDataType="2"></Item>-->
+
+  </ShearerInfo>
+  </OpcServer>
+</System>
