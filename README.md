@@ -1,5 +1,5 @@
 # KopSoftSCADA
-KopSoftSCADA
+KopSoft数据采集与监控
 
 ****
 * KopSoft标签打印软件 http://wms.kopsoft.cn/print/
