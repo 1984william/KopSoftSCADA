@@ -1,5 +1,5 @@
 # KopSoftSCADA
-KopSoft数据采集与监控
+KopSoft数据采集与监控,电子看板
 
 ****
 * KopSoft标签打印软件 http://wms.kopsoft.cn/print/
