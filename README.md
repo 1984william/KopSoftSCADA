@@ -1,5 +1,4 @@
-# KopSoftSCADA
-KopSoft数据采集与监控,电子看板
+# KopSoftSCADA数据采集与监控,电子看板,Andon安灯系统
 
 ****
 * KopSoft标签(条码)打印软件 http://print.kopsoft.cn/
